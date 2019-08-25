@@ -3,53 +3,30 @@ body {margin:0;}
 #main
 {
   padding:2%;
-  margin-top:3%;
+  position: relative;
   background-color: #2eb82e;
 }
-a:hover:not(.active)
+nav
 {
-    background-color: #cc99ff;
+  background-color:#595959;
 }
+
 #bio img{
     height:100px;
     width:100px;
     float:left;
     padding:5px;
 }
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 
-ul.topnav li {
-  float: left;
-}
-
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {
-  background-color: #111;
-}
 
 .active {
   background-color: #4CAF50;
 }
 
-/*
-h4
+
+.card-title
 {
- padding: 10px;
- background-color: #cc99ff;
+  font-style: italic;
+  
 }
+

@@ -16,9 +16,11 @@
     <link rel="stylesheet"  href="index.css">
     </head>
     <body>
-        
-        <ul class="topnav">
-                    <li><a href="#bio">Bio</a></li>
+        <div id="top-nav" class="navbar-fixed">
+        <nav>
+        <div class="nav-wrapper">
+        <ul class="left hide-on-med-and-down">
+                    <li><a  href="#bio">Bio</a></li>
                     <li><a href="#education">education</a></li>
                     <li><a href="#work">work</a></li>
                     <li><a href="#publications">publications</a></li>
@@ -26,9 +28,12 @@
                     <li><a href="#others">others</a></li>
                    
         </ul>
-    
+        </div>
+        </nav>
+        </div>
         <div id="main">
-        <div id="bio" class="card-panel #fafafa grey lighten-5">
+        <div  id="bio" class="card-panel #fafafa grey lighten-5 hoverable ">
+            
             <h4>Bio</h4>
             <img  src="praveen.jpg" alt="praveen's image">
             <p style="padding:5px;">     I am a second-year masters student studying at National Institute of Technology Puducherry, India. I have worked on 
@@ -38,180 +43,174 @@
             </p>
             <a href="https://github.com/praveensankar">github</a>
             <a href="https://www.linkedin.com/in/praveensankar-manimaran-81092698/">linkedin</a>
-            <button>Resume</button>
+            <a class="waves-effect waves-light btn">Resume</a>
             <p>email : praveensankar1995@gmail.com</p>
         </div>
         
-        <div id="education" class="card-panel">
+        <div id="education" class="card-panel hoverable">
             <h4>Education Details</h4>
-            <ul>
-            <li>
-                <div>    
-                    <h5>M.Tech. - Computer Science and Engineering</h5>
-                    <p>National Institute of Technology Puducherry, karaikal, India. (July 2018 - PRESENT)</p>
+            <div class="card">
+                    <div class="card-content">
+                      <span class="card-title">M.Tech. - Computer Science and Engineering</span>
+                      <p>National Institute of Technology Puducherry, karaikal, India. (July 2018 - PRESENT)</p>
                     <p>CGPA- 9.91 / 10</p>
-                 </div>
-            </li>
-            <li>
-                <div>
-                    <h5>B.E. - Computer Science and Engineering</h5>
-                    <p>PSG College of Technology, Coimbatore, India. (July 2012 - May 2016)</p>
-                    <p>CGPA- 7.69 / 10</p>
-                </div>
-            </li>
-            </ul>
+                    </div>
+                    
+                  </div>
+                  <div class="card">
+                        <div class="card-content">
+                          <span class="card-title">B.E. - Computer Science and Engineering</span>
+                          <p>PSG College of Technology, Coimbatore, India. (July 2012 - May 2016)</p>
+                          <p>CGPA- 7.69 / 10</p>
+                        </div>
+                      </div>
+               
+            
         </div>
         
-        <div class="card-panel #fafafa grey lighten-5" id="work">
+        <div class="card-panel #fafafa grey lighten-5 hoverable" id="work">
                 <h4>Work Experience</h4>
-                <ul>
-                <li>
-                    <div>    
-                        <h5>Summer Research Intern</h5>
-                        <p>National Institute of Technology Calicut, Kozhikode, India. (May 2019 - July 2019)</p>
-                        <ul>
-                            <li>Studied about Software Defined Networking</li>
-                            <li>Worked with mininet simulator to simulator SDN environment</li>
-                            <li>Studied the architecture of the Named Data Networking and usage of NDN in VANET</li>
-                            <li>Designed and developed Intrusion Detection System for NDN Based VANET</li>
-                        </ul>
-                     </div>
-                </li>
-                <li>
-                        <div>    
-                            <h5>Software Engineer</h5>
-                            <p>Accolite Software India Pvt. Ltd., Bangalore, India. (July 2016 - March 2017)</p>
-                            <ul>
-                                <li>Worked on the web development</li>
-                                <li>Language - C#, Javascript, Web framework - ASP.NET MVC, backend technology -
-                                        ASP.NET, frontend technology - Jquery and AngularJS, database - Microsoft SQL Server</li>
-                                <li>Developed POC application for IT Resource Management</li>
-                                <li>Worked on web development for British Telecommunications through Accolite</li>
-                            </ul>
-                         </div>
-                    </li>
-                    <li>
-                            <div>    
-                                <h5>Software Engineer Intern</h5>
-                                <p>Accolite Software India Pvt. Ltd., Bangalore, India. (January 2016 - April 2016)</p>
-                                <ul>
+                    <div class="card">
+                        <div class="card-content">
+                          <span class="card-title">Summer Research Intern</span>
+                          <p>National Institute of Technology Calicut, Kozhikode, India. (May 2019 - July 2019)</p>
+                          <ul>
+                              <li>Studied about Software Defined Networking</li>
+                              <li>Worked with mininet simulator to simulator SDN environment</li>
+                              <li>Studied the architecture of the Named Data Networking and usage of NDN in VANET</li>
+                              <li>Designed and developed Intrusion Detection System for NDN Based VANET</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="card">
+                            <div class="card-content">
+                              <span class="card-title">Software Engineer</span>
+                              <p>Accolite Software India Pvt. Ltd., Bangalore, India. (July 2016 - March 2017)</p>
+                              <ul>
                                     <li>Worked on the web development</li>
                                     <li>Language - C#, Javascript, Web framework - ASP.NET MVC, backend technology -
                                             ASP.NET, frontend technology - Jquery and AngularJS, database - Microsoft SQL Server</li>
-                                    <li>Learned about web development in general and studied ASP.NET and Basic javascript for
-                                            developing websites</li>
-                                    <li>Studied about 3 Layer architecture in ASP.NET</li>
+                                    <li>Developed POC application for IT Resource Management</li>
+                                    <li>Worked on web development for British Telecommunications through Accolite</li>
                                 </ul>
-                             </div>
-                        </li>
-                </ul>
+                            </div>
+                          </div>
+                          <div class="card">
+                                <div class="card-content">
+                                  <span class="card-title">Software Engineer Intern</span>
+                                  <p>Accolite Software India Pvt. Ltd., Bangalore, India. (January 2016 - April 2016)</p>
+                                  <ul>
+                                        <li>Worked on the web development</li>
+                                        <li>Language - C#, Javascript, Web framework - ASP.NET MVC, backend technology -
+                                                ASP.NET, frontend technology - Jquery and AngularJS, database - Microsoft SQL Server</li>
+                                        <li>Learned about web development in general and studied ASP.NET and Basic javascript for
+                                                developing websites</li>
+                                        <li>Studied about 3 Layer architecture in ASP.NET</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            
             </div>
             
-            <div class="card-panel" id="publications">
+            <div class="card-panel hoverable" id="publications">
                     <h4>Publications</h4>
-                    
-                        <div>    
-                            <h5>Journal</h5>
-                            <ol>
-                                <li>
-                                    <p>Praveensankar Manimaran and P. Arun Raj Kumar. “NDNIDS : An Intrusion Detection System for
-                                        NDN Based VANET” ​ International Journal of Security and Networks ​( in screening )</p>
-                                </li>
-                            </ol>
-                         </div>
-                    
-                            <div>    
-                                <h5>Book Chapter</h5>
-                                <ol>
-                                        <li>
-                                            <p>Praveensankar Manimaran and Dr. Chandrasekar Ravi. “Introduction of Blockchain and Usage of
-                                                Blockchain in Internet Of Things” in ​ Transforming Businesses with Bitcoin Mining and Blockchain
-                                                Applications, I ​GI Global ( accepted )</p>
-                                        </li>
-                                    </ol>
-                             </div>
-                    
-                            <div>    
-                                <h5>Conference</h5>
-                                <ol>
-                                        <li>
-                                            <p>Praveensankar Manimaran and Dr. R. Dhanalakshmi. “Blockchain Based Smart Contract for
-                                                E-Bidding System” in ​ International Conference on Intelligent Communication and Computational
-                                                Techniques (ICCT19), Jaipur, 2019, IEEE ​ ( accepted) </p>
-                                        </li>
-                                    </ol>
-                                
-                             </div>
-                    
+                    <div class="card">
+                            <div class="card-content">
+                              <span class="card-title">Journal</span>
+                              <p>Praveensankar Manimaran and P. Arun Raj Kumar. “NDNIDS : An Intrusion Detection System for
+                                    NDN Based VANET” ​ International Journal of Security and Networks ​( in screening )</p>
+                            </div>
+                          </div>
+                        
+                          <div class="card">
+                                <div class="card-content">
+                                  <span class="card-title">Book Chapter</span>
+                                  <p>Praveensankar Manimaran and Dr. Chandrasekar Ravi. “Introduction of Blockchain and Usage of
+                                        Blockchain in Internet Of Things” in ​ Transforming Businesses with Bitcoin Mining and Blockchain
+                                        Applications, I ​GI Global ( accepted )</p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                    <div class="card-content">
+                                      <span class="card-title">Conference</span>
+                                      <p>Praveensankar Manimaran and Dr. R. Dhanalakshmi. “Blockchain Based Smart Contract for
+                                            E-Bidding System” in ​ International Conference on Intelligent Communication and Computational
+                                            Techniques (ICCT19), Jaipur, 2019, IEEE ​ ( accepted) </p>
+                                    </div>
+                                  </div>
                 </div>
                 
-                <div class="card-panel" id="projects">
+                <div class="card-panel hoverable" id="projects">
                         <h4>Projects</h4>
-                        <ul>
-                        <li>
-                            <div>    
-                                <h5>Android Application for alarm system</h5>
-                                <p>PSG College of Technology, Coimbatore, India. (June 2015 - October 2015)</p>
-                                <ul>
-                                    <li>In this application to stop the alarm, the user has to solve either a mathematical puzzle or
-                                        a logical puzzle or count the number of objects in the image or click the given color in the
-                                        grid of colors. These functionalities are provided along with traditional alarm
-                                        functionalities</li>
-                                    <li><a href="https://github.com/praveensankar/Alarm-App">github link</a></li>
-                                    
-                                </ul>
-                             </div>
-                        </li>
-                        <li>
-                                <div>    
-                                    <h5>Face Recognition system using Principal Component Analysis</h5>
-                                    <p>PSG College of Technology, Coimbatore, India. (June 2014 - October 2014)</p>
-                                    <ul>
-                                        <li>To detect and recognize an image from a predefined collection of images using the
-                                            eigenface-based facial recognition</li>
-                                        <li><a href="https://github.com/praveensankar/face_recognition">github link</a></li>
-                                        
-                                    </ul>
-                                 </div>
-                            </li>
-                        </ul>
+                        <div class="card">
+                                <div class="card-content">
+                                  <span class="card-title">Android Application for alarm system</span>
+                                  <p>PSG College of Technology, Coimbatore, India. (June 2015 - October 2015)</p>
+                                  <ul>
+                                      <li>In this application to stop the alarm, the user has to solve either a mathematical puzzle or
+                                          a logical puzzle or count the number of objects in the image or click the given color in the
+                                          grid of colors. These functionalities are provided along with traditional alarm
+                                          functionalities</li>
+                                      <li><a href="https://github.com/praveensankar/Alarm-App">github link</a></li>  
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="card">
+                                    <div class="card-content">
+                                      <span class="card-title">Face Recognition system using Principal Component Analysis</span>
+                                      <p>PSG College of Technology, Coimbatore, India. (June 2014 - October 2014)</p>
+                                      <ul>
+                                            <li>To detect and recognize an image from a predefined collection of images using the
+                                                eigenface-based facial recognition</li>
+                                            <li><a href="https://github.com/praveensankar/face_recognition">github link</a></li>    
+                                        </ul>
+                                    </div>
+                                  </div>
+                           
                 </div>
                 
-                <div class="card-panel #fafafa grey lighten-5" id="others">
+                <div class="card-panel #fafafa grey lighten-5 hoverable" id="others">
                 <div id="teaching">
                         <h4>Teaching work</h4>
-                        <ul>
-                        <li>
-                            <div>    
-                                <h5>Teaching Assistant - CS102 Basics of Programming Lab</h5>
-                                <p>National Institute of Technology Puducherry, karaikal, India. (January 2019 - April 2019)</p>
+                        <div class="card">
+                                <div class="card-content">
+                                  <span class="card-title">Teaching Assistant - CS102 Basics of Programming Lab</span>
+                                  <p>National Institute of Technology Puducherry, karaikal, India. (January 2019 - April 2019)</p>
                                 <ul>
                                     <li>Assisted students in doing the lab experiments using the programming language ‘c’</li>
                                 </ul>
-                             </div>
-                        </li>
-                        </ul>
+                                </div>
+                              </div>
                 </div>
                 
                 <div id="skills">
                         <h4>Skills</h4>
-                        <ul>
-                            <li><b>Programming Languages : ​</b> C, Python, SQL</li>
-                            <li><b>Operating Systems : ​​</b> Ubuntu, Windows</li>
-                            <li><b>Frameworks : ​</b> Django</li>
-                        </ul>
+                        <div class="card">
+                                <div class="card-content">
+                                        <ul>
+                                                <li><b>Programming Languages : ​</b> C, Python, SQL</li>
+                                                <li><b>Operating Systems : ​​</b> Ubuntu, Windows</li>
+                                                <li><b>Frameworks : ​</b> Django</li>
+                                            </ul>
+                                </div>
+                              </div>
+                       
                 </div>
                 
                 <div id="achievements">
                         <h4>Achievements</h4>
-                        <ul>
-                           <li>Scored 96.03 Percentile in Computer Science, GATE 2018</li>
-                           <li>Scored 98.02% in HSC exam, 2012</li>
-                           <li>Scored Centum in Computer Science, HSC exam, 2012</li>
-                           <li>Scored 97.80% in SSLC exam, 2010</li>
-                           <li>Scored Centum in Maths and Science, SSLC exam, 2010</li>
+                        <div class="card">
+                                <div class="card-content">
+                        <ul class="collection">
+                           <li  class="collection-item">Scored 96.03 Percentile in Computer Science, GATE 2018</li>
+                           <li  class="collection-item">Scored 98.02% in HSC exam, 2012</li>
+                           <li  class="collection-item">Scored Centum in Computer Science, HSC exam, 2012</li>
+                           <li  class="collection-item">Scored 97.80% in SSLC exam, 2010</li>
+                           <li  class="collection-item">Scored Centum in Maths and Science, SSLC exam, 2010</li>
                         </ul>
                 </div>
+            </div>
+        </div>
                 
             </div>
         </div>
