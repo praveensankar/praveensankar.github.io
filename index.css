@@ -1,5 +1,11 @@
 body {margin:0;}
-                
+  
+#main
+{
+  padding:2%;
+  margin-top:3%;
+  background-color: #2eb82e;
+}
 a:hover:not(.active)
 {
     background-color: #cc99ff;
@@ -39,4 +45,11 @@ ul.topnav li a:hover:not(.active) {
 
 .active {
   background-color: #4CAF50;
+}
+
+/*
+h4
+{
+ padding: 10px;
+ background-color: #cc99ff;
 }
