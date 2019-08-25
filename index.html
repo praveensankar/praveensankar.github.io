@@ -4,19 +4,26 @@
         <title>Praveen's personal website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-                body {margin: 0;}
-               
+                body {margin:0;}
+                
+                a:hover:not(.active)
+                {
+                    background-color: #cc99ff;
+                }
                 ul.topnav {
                   list-style-type: none;
                   margin: 0;
                   padding: 0;
                   overflow: hidden;
-                  background-color:black;
-                 
-                 
+                  background-color: #333;
+                  position: fixed;
+                  top: 0;
+                  width: 100%;
                 }
                 
-                ul.topnav li {float: left;}
+                ul.topnav li {
+                  float: left;
+                }
                 
                 ul.topnav li a {
                   display: block;
@@ -26,20 +33,17 @@
                   text-decoration: none;
                 }
                 
-                ul.topnav li a:hover:not(.active) {background-color: #111;}
-                
-                ul.topnav li a.active {background-color: #4CAF50;}
-                
-                ul.topnav li.right {float: right;}
-                
-                @media screen and (max-width: 600px) {
-                  ul.topnav li.right, 
-                  ul.topnav li {float: none;}
+                ul.topnav li a:hover:not(.active) {
+                  background-color: #111;
                 }
-            </style>
+                
+                .active {
+                  background-color: #4CAF50;
+                }
+                </style>
     </head>
     <body>
-        <div style="position: fixed">
+        
         <ul class="topnav">
                     <li><a href="#bio">Bio</a></li>
                     <li><a href="#education">education</a></li>
@@ -49,8 +53,8 @@
                     <li><a href="#others">others</a></li>
                    
         </ul>
-    </div>
-        <div id="main">
+    
+        <div id="main"  style="padding:20px;margin-top:30px;background-color:#e6e6ff;">
         <div id="bio">
             <h2>Bio</h2>
             <p>     I am a second-year masters student studying at National Institute of Technology Puducherry, India. I have worked on 
