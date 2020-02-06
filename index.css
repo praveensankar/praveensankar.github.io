@@ -4,13 +4,17 @@ body {margin:0;}
 {
   padding:2%;
   position: relative;
-  background-color: #333399;
+  background-color: #595959;
 }
 nav
 {
-  background-color:#595959;
+  background-color:#333333;
 }
 
+#top-nav a:hover {
+  background-color: #000000;
+  
+}
 #bio img{
     height:100px;
     width:100px;
