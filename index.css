@@ -2,8 +2,8 @@ body {margin:0;}
   
 #main
 {
-  padding:2%;
-  position: relative;
+  padding:1% 5% 2% 5%;
+  position: sticky;
   background-color: #595959;
 }
 nav
