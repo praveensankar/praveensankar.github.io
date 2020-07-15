@@ -29,7 +29,7 @@ nav{
 
 }
 
-.background-dark .card{
+.card{
   background-color:#262226;
   color:white;
 
@@ -129,10 +129,7 @@ nav ul li.active {
   background-color: #00134d;
 }
 
-.background-light .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
-  color: #4271ff;
 
-}
 
 .btn:hover{
   background-color: #262226;
