@@ -11,6 +11,10 @@ nav{
   background-color:#262226;
 }
 
+nav  ul li a:hover{
+background-color: #00394d;
+}
+
 #bio{
   padding: 1% 10% 10% 15%;
   min-height:100%;
