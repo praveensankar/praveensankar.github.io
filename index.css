@@ -29,6 +29,9 @@ nav{
 
 }
 
+.background-light .card{
+background-color: #602020;
+}
 .card{
   background-color:#262226;
   color:white;
