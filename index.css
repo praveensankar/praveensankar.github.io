@@ -15,7 +15,6 @@ nav{
   padding: 1% 10% 10% 15%;
   min-height:100%;
   color:white;
-   background-color:#391339;
    text-align: justify;
    font-size: 1.1vw;
   }
@@ -25,7 +24,7 @@ nav{
 }
 
 .background-dark{
-  background-color:#391339;
+  background-color:#334d4d;
   color:white;
 
 }
@@ -77,7 +76,7 @@ h5{
     padding: 2% 5% 2% 5%;
     min-height:100%;
     color:white;
-     background-color:#391339;
+     
      text-align: justiy;
      font-size: 14px;
     }
@@ -123,7 +122,7 @@ html, body{
 }
 
 nav ul li.active {
-  background-color: #391339;
+  background-color: #334d4d;
 }
 
 .btn{
