@@ -29,8 +29,10 @@ background-color: #00394d;
 
 
   #bio img{
-    height:30vh;
-    width:16vw;
+    height:35%;
+    max-height: 220px;
+    width:35%;
+    max-width: 220px;
     float:left;
     margin-top:1%;
     padding:2%;
