@@ -1,36 +1,121 @@
-body {margin:0;}
-  
+
 #main
 {
-  padding:1% 5% 2% 5%;
-  position: sticky;
-  background-color: #595959;
-}
-nav
-{
-  background-color:#333333;
+
+  padding:0% 0% 0% 0%;
+  position: relative;
+  background-color:white ;
 }
 
-#top-nav a:hover {
-  background-color: #000000;
-  
+nav{
+  background-color:#262226;
 }
+
+#bio{
+  padding: 1% 10% 10% 15%;
+  min-height:100%;
+  color:white;
+   background-color:#391339;
+   text-align: justify;
+   font-size: 1.1vw;
+  }
+
+#education{
+  padding: 5% 10% 10% 15%;
+}
+
+.background-dark{
+  background-color:#391339;
+  color:white;
+
+}
+
+.background-dark .card{
+  background-color:#262226;
+  color:white;
+
+}
+
+
 #bio img{
-    height:120px;
-    width:120px;
+    height:30vh;
+    width:16vw;
     float:left;
+    margin:8px;
     padding:5px;
 }
 
 
-.active {
-  background-color: #4CAF50;
-}
+
 
 
 .card-title
 {
   font-style: italic;
-  
 }
 
+.card{
+  margin:2% 10% 2% 10%;
+}
+
+
+h4{
+  text-align:center;
+  padding-top: 5%;
+  margin-bottom: 5%;
+}
+h5{
+  text-align:center;
+
+  font-weight: bold;
+
+}
+
+@media screen and (max-width: 500px) {
+  h4 {
+    padding-top: 28%;
+    text-align:center;
+    padding-bottom: 5%;
+  }
+
+  nav  {
+    height: 8em;
+  }
+}
+
+html, body{
+  height:100%;
+}
+
+.full-height{
+  min-height: 100%;
+  margin:0% 0%;
+  padding: 1% 0%;
+}
+
+nav ul li.active {
+  background-color: #391339;
+}
+
+.btn{
+  background-color: #00134d;
+}
+
+.background-light .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: #4271ff;
+
+}
+
+.btn:hover{
+  background-color: #262226;
+
+}
+
+.background-light .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+  color: #ff9100;
+
+}
+
+.card-content ul li{
+  list-style-type: disc !important;
+}

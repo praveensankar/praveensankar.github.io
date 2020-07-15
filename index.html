@@ -11,54 +11,61 @@
        
          <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+ <script type="text/javascript" src="index.js"></script>
     <link rel="stylesheet"  href="index.css">
     </head>
-    <body>
-        <div id="top-nav" class="navbar-fixed">
-        <nav>
+    <body style="height:100%;">
+      <div  class="navbar-fixed">
+      <nav>
         <div class="nav-wrapper">
-        <ul class="left hide-on-med-and-down">
-                    <li><a class="nav-item" href="#bio">Bio</a></li>
-                    <li><a class="nav-item" href="#education">education</a></li>
-                    <li><a class="nav-item" href="#work">work</a></li>
-                    <li><a class="nav-item" href="#publications">publications</a></li>
-                    <li><a class="nav-item" href="#projects">projects</a></li>
-                    <li><a class="nav-item" href="#others">others</a></li>
-                   
-        </ul>
+          <ul id="nav-mobile" class="left">
+            <li class="active" ><a href="#bio">bio</a></li>
+            <li><a href="#education">education</a></li>
+            <li><a href="#work">work</a></li>
+            <li><a href="#publications">publications</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#others">others</a></li>
+          </ul>
         </div>
-        </nav>
-        </div>
-        <div id="main">
-        <div  id="bio" class="card-panel #fafafa  lighten-5 hoverable ">
-            
+      </nav>
+    </div>
+        <div style="height:100%;" id="main">
+        <div id="bio" class="full-height background-dark">
+            <div class="content">
             <h4>Praveensankar Manimaran</h4>
             <img  src="praveen.jpg" alt="praveen's image">
-            <p style="padding:5px;">   I am a second-year masters student studying at National Institute of Technology Puducherry,
-              India. I have worked on blockchain technology and Named Data Networking. In Blockchain, I
-              have experience in Hyperledger fabric. I have developed an Intrusion Detection System for
-              NDN-Based VANET. For my master’s project I am exploring the fully homomorphic encryption
-              technique based on the ideal lattices. My research interests are in Blockchain, Cryptography, Lattice
-              Cryptography, Cyber Security and Network Security. 
+            <p style="padding: 3%">   I am a computer science researcher working on Blockchain and Security. I have completed
+              M.Tech. in Computer Science and Engineering at the National Institute of Technology
+              Puducherry, India and B.E. in Computer Science and Engineering at PSG College of Technology,
+              Coimbatore, India. I have research experience in Blockchain, Named Data Networking and Lattice
+              Cryptography. I have developed an e-bidding system on the hyperledger fabric blockchain
+              network. I have developed an Intrusion Detection System for NDN based VANETs. I have
+              developed an authenticated encryption scheme based on lattice cryptography. My research
+              interests are in Blockchain, Cryptography, Lattice Cryptography and Network Security.
             </p>
+         
+            <div style="clear:left;">
             <a class="waves-effect waves-light btn" target="_blank" href="https://github.com/praveensankar">github</a>
             <a class="waves-effect waves-light btn" target="_blank" href="https://www.linkedin.com/in/praveensankar-manimaran-81092698/">linkedin</a>
             <a  class="waves-effect waves-light btn" target="_blank" href="https://scholar.google.com/citations?user=oyTr15UAAAAJ">google scholar</a>
             <a  class="waves-effect waves-light btn" target="_blank" href="https://orcid.org/0000-0003-3614-5722">ORCID</a>
             <a class="waves-effect waves-light btn" target="_blank" href="resume.pdf" download>Resume</a>
             <p>email : praveensankar1995@gmail.com</p>
-        </div>
-        
-        <div id="education"  class="card-panel hoverable">
-            <h4  >Education Details</h4>
+          </div>
+          </div>
+      </div>
+        <div id="education" class="full-height background-light">
+          <div   class="  ">
+            <h4 style="text-align:center">Education Details</h4>
             <div class="card">
                     <div class="card-content">
                       <span class="card-title"><b>M.Tech. - Computer Science and Engineering</b></span>
                       <p>National Institute of Technology Puducherry, karaikal, India. (July 2018 - June 2020)</p>
-                    <p>CGPA- 9.77 / 10</p>
+                    <p>CGPA - 9.82 / 10 (class topper)</p>
                     </div>
                     
                   </div>
@@ -72,17 +79,16 @@
                
             
         </div>
-        
-        <div class="card-panel #fafafa  lighten-5 hoverable" id="work">
+      </div>
+      <div  id="work" class="full-height background-dark">
+        <div class="  #fafafa  lighten-5 ">
                 <h4>Work Experience</h4>
                     <div class="card">
                         <div class="card-content">
                           <span class="card-title"><b>Summer Research Intern</b></span>
                           <p>National Institute of Technology Calicut, Kozhikode, India. (May 2019 - July 2019)</p>
                           <ul>
-                              <li>Studied about Software Defined Networking</li>
-                              <li>Worked with mininet simulator to simulator SDN environment</li>
-                              <li>Studied the architecture of the Named Data Networking and usage of NDN in VANET</li>
+                              <li>Studied about Software Defined Networking, mininet simulator, Named Data Networking and usage of NDN in VANET</li>
                               <li>Designed and developed Intrusion Detection System for NDN Based VANET</li>
                           </ul>
                         </div>
@@ -95,7 +101,7 @@
                                     <li>Worked on the web development</li>
                                     <li>Language - C#, Javascript, Web framework - ASP.NET MVC, backend technology -
                                             ASP.NET, frontend technology - Jquery and AngularJS, database - Microsoft SQL Server</li>
-                                    <li>Developed POC application for IT Resource Management</li>
+                        
                                     <li>Worked on web development for British Telecommunications through Accolite</li>
                                 </ul>
                             </div>
@@ -116,48 +122,57 @@
                               </div>
                             
             </div>
-            
-            <div class="card-panel hoverable" id="publications">
+          </div>
+          <div   id="publications" class="full-height background-light">
+            <div class="">
                     <h4>Publications</h4>
-              
+                    <div class="conference">
+                      <h5>Conference</h5>
+                      <div class="card">
+                        <div class="card-content">
+                          <span class="card-title"><b>NDNIDS</b></span>
+                             
+                              <p>P. Manimaran and A. R. K. P, "NDNIDS: An Intrusion Detection System for NDN Based VANET," 2020 IEEE 91st Vehicular Technology Conference (VTC2020-Spring), 
+                                Antwerp, Belgium, 2020, pp. 1-5, doi: 10.1109/VTC2020-Spring48590.2020.9129365.</p>
+                                  
+                        </div>
+                        <div class="card-action">
+                          <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9129365">NDNIDS : An Intrusion Detection System for NDN Based VANET</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-content">
+                              <span class="card-title"><b>Bidder</b></span>
+                              <p>P. Manimaran and R. Dhanalakshmi, "Blockchain-Based Smart Contract for E-Bidding System," 2019 2nd International Conference on Intelligent Communication and Computational Techniques (ICCT), Jaipur, India, 2019, pp. 55-59.
+                            doi: 10.1109/ICCT46177.2019.8969042</p>
+                              </div>
+                              <div class="card-action">
+                                <a target="_blank" href="https://ieeexplore.ieee.org/document/8969042">Blockchain Based Smart Contract for E-Bidding System</a>
+                              </div>
+                      </div>
                   
-                              <div class="card">
-                                    <div class="card-content">
-                                      <span class="card-title"><b>Conference</b></span>
-                                      <ol>   
-                                        <li>
-                                          <p>P. Manimaran and A. R. K. P, "NDNIDS: An Intrusion Detection System for NDN Based VANET," 2020 IEEE 91st Vehicular Technology Conference (VTC2020-Spring), 
-                                            Antwerp, Belgium, 2020, pp. 1-5, doi: 10.1109/VTC2020-Spring48590.2020.9129365.</p>
-                                              Link: <a href="https://ieeexplore.ieee.org/abstract/document/9129365">NDNIDS : An Intrusion Detection System for NDN Based VANET</a>
-                                      </li>
-                                          <hr>
-                                          <li>
-                                            <p>P. Manimaran and R. Dhanalakshmi, "Blockchain-Based Smart Contract for E-Bidding System," 2019 2nd International Conference on Intelligent Communication and Computational Techniques (ICCT), Jaipur, India, 2019, pp. 55-59.
-                                        doi: 10.1109/ICCT46177.2019.8969042</p>
-                                            Link : <a href="https://ieeexplore.ieee.org/document/8969042">Blockchain Based Smart Contract for E-Bidding System</a>
-                                          </li>
-                                        </ol>
-                                          </div>
-                                  </div>
-                                  <div class="card">
-                                    <div class="card-content">
-                                      <span class="card-title"><b>Book Chapter</b></span>
-                                      <ol>   
-                                        <li>
-                                        <p>Ravi, Chandrasekar and Praveensankar Manimaran. "Introduction of Blockchain and Usage of
-                                        Blockchain in Internet of Things." ​ Transforming Businesses With Bitcoin Mining and Blockchain
-                                        Applications. ​ IGI Global, 2020. 1-15. Web. 18 Oct. 2019. doi:10.4018/978-1-7998-0186-3.ch001
-                                      </p>
-                                       Link : <a href="https://www.igi-global.com/chapter/introduction-of-blockchain-and-usage-of-blockchain-in-interne
-                                        t-of-things/238356">Introduction to Blockchain and Usage of Blockchain in IOT</a>
-                                      </li>
-                                      </ol>
-    
-                                    </div>
-                                  </div>
+                    </div>
+                    <div class="book_chapter">
+                        <h5>Book Chapter</h5>
+                      <div class="card">
+                        <div class="card-content">
+                          <span class="card-title"><b>Blockchain and IOT</b></span>
+                            <p>Ravi, Chandrasekar and Praveensankar Manimaran. "Introduction of Blockchain and Usage of
+                            Blockchain in Internet of Things." ​ Transforming Businesses With Bitcoin Mining and Blockchain
+                            Applications. ​ IGI Global, 2020. 1-15. Web. 18 Oct. 2019. doi:10.4018/978-1-7998-0186-3.ch001
+                          </p>
+                         </div>
+                         <div class="card-action">
+                          <a target="_blank" href="https://www.igi-global.com/chapter/introduction-of-blockchain-and-usage-of-blockchain-in-interne
+                          t-of-things/238356">Introduction to Blockchain and Usage of Blockchain in IOT</a>
+                        
+                         </div>
+                      </div>
+                    </div>
                 </div>
-                
-                <div class="card-panel hoverable" id="projects">
+              </div>
+              <div id="projects" class="full-height background-dark">
+                <div class="  " >
                         <h4>Projects</h4>
                         <div class="card">
                                 <div class="card-content">
@@ -168,27 +183,38 @@
                                           a logical puzzle or count the number of objects in the image or click the given color in the
                                           grid of colors. These functionalities are provided along with traditional alarm
                                           functionalities</li>
-                                      <li><a href="https://github.com/praveensankar/Alarm-App">github link</a></li>  
+                                        
                                   </ul>
+                                </div>
+                                <div class="card-action">
+                                  <a target="_blank" href="https://github.com/praveensankar/Alarm-App">github link</a>
                                 </div>
                               </div>
                               <div class="card">
-                                    <div class="card-content">
-                                      <span class="card-title"><b>Face Recognition system using Principal Component Analysis</b></span>
+                                <div class="card-content">
+                                      <span class="card-title"><b>Face Recognition system using Principal Component Analysis
+                                      </b>
+                                      </span>
+                                   
                                       <p>PSG College of Technology, Coimbatore, India. (June 2014 - October 2014)</p>
                                       <ul>
                                             <li>To detect and recognize an image from a predefined collection of images using the
                                                 eigenface-based facial recognition</li>
-                                            <li><a href="https://github.com/praveensankar/face_recognition">github link</a></li>    
+                                                
                                         </ul>
+                                    </div>
+                                    <div class="card-action">
+                                      <a target="_blank" href="https://github.com/praveensankar/face_recognition">github link</a>
                                     </div>
                                   </div>
                            
                 </div>
-                
-                <div class="card-panel #fafafa  lighten-5 hoverable" id="others">
+              </div>
+              <div  id="others" class="full-height background-light">
+                <div class="  #fafafa  lighten-5 ">
+                  <h4>other activities</h4>
                 <div id="teaching">
-                        <h4>Teaching work</h4>
+                        <h5>Teaching work</h5>
                         <div class="card">
                           <div class="card-content">
                             <span class="card-title">Teaching Assistant - CS609 Network Programming Lab</span>
@@ -205,7 +231,7 @@
                 </div>
                 
                 <div id="skills">
-                        <h4>Skills</h4>
+                        <h5>Skills</h5>
                         <div class="card">
                                 <div class="card-content">
                                         <ul>
@@ -219,7 +245,7 @@
                 </div>
                 
                 <div id="achievements">
-                        <h4>Achievements</h4>
+                        <h5>Achievements</h5>
                         <div class="card">
                                 <div class="card-content">
                         <ul class="collection">
@@ -232,7 +258,7 @@
                 </div>
             </div>
         </div>
-                
+      </div>
             </div>
         </div>
                 
