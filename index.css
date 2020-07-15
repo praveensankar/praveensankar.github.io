@@ -23,7 +23,7 @@ background-color: #00394d;
   }
 
   #bio .content{
-    padding-top:5%;
+    padding-top:10%;
   }
 
 
@@ -51,9 +51,12 @@ background-color: #00394d;
   color:white;
 
 }
-
+.background-light{
+  background-color: #d1e0e0;
+}
 .background-light .card{
-background-color: #602020;
+background-color: #661919;
+background-color: #295656;
 }
 .card{
   background-color:#262226;
