@@ -72,6 +72,27 @@ h5{
 }
 
 @media screen and (max-width: 500px) {
+
+  #bio{
+    padding: 2% 5% 2% 5%;
+    min-height:100%;
+    color:white;
+     background-color:#391339;
+     text-align: justiy;
+     font-size: 14px;
+    }
+  #bio .content{
+    clear:left;
+  }
+
+#bio img{
+  height:30vh;
+  width:40vw;
+  float:none;
+  margin:0% 15% 0% 25%;
+}
+
+
   h4 {
     padding-top: 28%;
     text-align:center;
@@ -80,6 +101,14 @@ h5{
 
   nav  {
     height: 8em;
+  }
+
+  .btn{
+    text-align: center;
+    
+    margin:1%;
+    height:4vh;
+    width:80vw;
   }
 }
 
