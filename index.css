@@ -16,7 +16,7 @@ nav{
   min-height:100%;
   color:white;
    text-align: justify;
-   font-size: 1.1vw;
+   font-size: 1em;
   }
 
 #education{
@@ -45,6 +45,7 @@ background-color: #602020;
     float:left;
     margin:1%;
     padding:1%;
+    border-radius: 50%;
 }
 
 
@@ -70,6 +71,25 @@ h5{
   text-align:center;
 
   font-weight: bold;
+
+}
+@media screen and (max-width: 720px) {
+
+#bio img{
+  height:30vh;
+  width:25vw;
+  float:left;
+  margin:1%;
+  padding:1%;
+  border-radius: 50%;
+}
+.btn{
+  text-align: center;
+  
+  margin:1%;
+  height:4vh;
+  width:20vw;
+}
 
 }
 
