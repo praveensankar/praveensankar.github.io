@@ -82,13 +82,31 @@ h5{
   font-weight: bold;
 
 }
-
-@media screen and (max-width: 1000px) {
-
+@media screen and (min-width: 2000px) {
+  #bio img{
+    height:35%;
+    max-height: 440px;
+    width:35%;
+    max-width: 440px;
+    float:left;
+    margin-top:1%;
+    padding:2%;
+    border-radius: 50%;
+}
+}
+@media screen and (max-width: 1366px) {
+  #bio{
+    padding: 2% 5% 2% 5%;
+    min-height:100%;
+    color:white;
+    text-align: justiy;
+    font-size: 1.1em;
+    }
   #bio img{
     height:35%;
     max-height: 220px;
     width:35%;
+    max-width: 220px;
     float:left;
     padding:1%;
     margin:1%;
