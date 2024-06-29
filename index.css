@@ -43,14 +43,19 @@ background-color: #00394d;
 
 
 #education{
-  padding: 5% 10% 10% 15%;
+  padding:1% 10% 10% 15%;
 }
 
 .background-dark{
-  background-color:#334d4d;
+  background-color:rgb(33, 61, 61);
   color:white;
 
 }
+
+.background-dark .card{
+  background-color: #2d3030;
+  }
+
 .background-light{
   background-color: #d1e0e0;
 }
@@ -233,4 +238,9 @@ nav ul li.active {
 
 .card-content ul li{
   list-style-type: disc !important;
+  margin-left:3%;
+}
+
+.card-content ul{
+  margin-bottom: 0%;
 }
