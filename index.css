@@ -19,7 +19,7 @@ background-color: #00394d;
   min-height:100%;
   color:white;
    text-align: justify;
-   font-size: 1.1em;
+   font-size: 1.2em;
   }
 
   #bio .content{
@@ -48,12 +48,12 @@ background-color: #00394d;
 
 .background-dark{
   background-color:rgb(33, 61, 61);
-  color:white;
-
+  color: white;
 }
 
 .background-dark .card{
   background-color: #2d3030;
+  background-color: #c2c7c7;
   }
 
 .background-light{
@@ -66,8 +66,12 @@ background-color: #295656;
 .card{
   background-color:#262226;
   color:white;
-
+  font-size: 1.1em;
 }
+
+.background-dark .card{
+  color: black;
+  }
 
 .card-title
 {
@@ -231,10 +235,15 @@ nav ul li.active {
 
 }
 
-.background-light .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
-  color: #ff9100;
-
+.background-dark .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+color: blue;
 }
+
+.background-dark .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+  color: darkblue;
+}
+
+
 
 .card-content ul li{
   list-style-type: disc !important;
@@ -243,4 +252,8 @@ nav ul li.active {
 
 .card-content ul{
   margin-bottom: 0%;
+}
+
+.collection .collection-item{
+background-color: #c2c7c7;
 }
