@@ -17,7 +17,7 @@ background-color: #00394d;
 #bio{
   padding: 1% 10% 10% 15%;
   min-height:100%;
-  color:white;
+  color:#F2F3F4;
    text-align: justify;
    font-size: 1.2em;
   }
@@ -61,12 +61,13 @@ background-color: #00394d;
 }
 .background-light .card{
 background-color: #661919;
+background-color: rgb(33, 61, 61);
 background-color: #295656;
 }
 .card{
   background-color:#262226;
-  color:white;
-  font-size: 1.1em;
+  color:#EAEDED;
+  font-size:1.1em;
 }
 
 .background-dark .card{
