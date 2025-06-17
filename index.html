@@ -26,6 +26,7 @@
           <ul id="nav-mobile" class="left">
             <li class="active" ><a href="#bio">Bio</a></li>
             <li><a href="#education">Education</a></li>
+              <li><a href="#adoption">Research Adoption</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#work">Work</a></li>
@@ -39,8 +40,14 @@
             <div class="content">
             <h4>Praveensankar Manimaran</h4>
             <img  src="press.jpeg" alt="praveen's image">
-            <p style="padding: 3%"> 
-              Praveensankar Manimaran is currently doing PhD at the Department of Computer Science, University of Oslo, Norway. His research interests are Blockchain Protocols, Decentralized Applications, Distributed Systems, and Applied Cryptography.  Praveen's PhD gave him experience in identifying and solving non-trivial research problems that directly impact the industry use cases. In addition, Praveen has experience in project management, effective communication and coordination of tasks among team members, and time management.
+            <p style="padding: 3%">
+                Praveensankar Manimaran is a PhD Research Fellow at the University of Oslo, Norway working on Verifiable
+                Credentials and Zero-Knowledge Proofs.
+                His research interests are Blockchain Protocols, Verifiable Credentials, Privacy-Preserving Protocols, Zero-Knowledge Proofs, and Applied Cryptography.
+                As part of the PhD, Praveen designed research projects, identified challenging research problems
+                including privacy issues in VCs revocation, developed novel solutions, and built prototypes to showcase the feasibility.
+                Praveen's PhD gave him experience in identifying and solving non-trivial research problems that directly impact the industry use cases.
+                In addition, Praveen has experience in project management, effective communication and coordination of tasks among team members, and time management.
             </p>
          
             <div style="clear:left;">
@@ -62,9 +69,9 @@
                 <p>University of Oslo, Norway. (October 2020 - Present)</p>
                 <ul>
                   <li>Research in Verifiable Credentials and Blockchain Technologies</li>
-                    <li>Worked on privacy issues in VCs's revocation and verification, and developed solutions using techniques such as Merkle Tree Accumulators, BBS Signatures, and Zero-Knowledge Proofs. </li>
+                    <li>Worked on privacy issues in VCs's revocation and verification, and developed solutions using techniques such as Zero-Knowledge Proofs, Merkle Tree Accumulators, and BBS Signatures. </li>
                     <li>Implemented prototypes to showcase the practicality of the solutions.</li>
-                    <li>Published research papers in top venues.</li>
+                    <li>Published research papers in top venues: Computer Science Review, and IEEE Blockchain.</li>
                     <li>Installed and maintained Norway's EBSI pilot node</li>
                   <li> Supervisors: Roman Vitenberg (<a target="_blank" href="http://heim.ifi.uio.no/~romanvi/">Homepage</a>), Leander Jehl (<a target="_blank" href="https://www.uis.no/nb/profile/877">Homepage</a>)</li>
                   <li>Advisors: Thiago Garrett (<a target="_blank" href="https://www.mn.uio.no/ifi/english/people/aca/thiagoga/">Homepage</a>), Mayank Raikwar
@@ -98,18 +105,38 @@
         </div>
       </div>
 
-          <div   id="publications" class="full-height background-dark">
+            <div id="adoption" class="full-height background-dark">
+                <div class="  " >
+                    <h4>Research Adoption</h4>
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title"><b>EBIP: Secure Privacy-Preserving Revocation of Verifiable Credentials</b></span>
+                            <ul>
+                                <li>Presents a security vulnerability in EBSI's Dynamic Status List, a revocation protocol
+                                    for verifiable credentials that addresses the privacy issue of holder's traceability. </li>
+                                <li>Adopts a ZKP-based revocation protocol that I developed along with my colleagues during my PhD.</li>
+
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <a target="_blank" href="https://hub.ebsi.eu/ebips">https://hub.ebsi.eu/ebips</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          <div   id="publications" class="full-height background-light">
             <div class="">
                     <h4>Publications</h4>
                     <div>
                       <div class="card">
                         <div class="card-content">
-                          <span class="card-title"><b>A Survey on SSI and Federated Identity Management Systems</b></span>
-                              <p>Computer Science Review (under revision)</p>
+                          <span class="card-title"><b>Decentralization Trends in Identity Management:  From Federated to Self-Sovereign Identity Management Systems.</b></span>
+                              <p>Computer Science Review (accepted)</p>
                                 <ul>
-                                  <li>Provides a generic model to analyse the architecture of IMSs</li>
-                                    <li>Using the generic model, analyzes IOTA Identity, Hyperledger Indy and eIDAS</li>
-                                    <li>Presents a taxonomy and insights based on the analysis</li>
+                                    <li>Studies Federated and Self-Sovereign Identity systems from a conceptual point-of-view.</li>
+                                  <li>Proposes a generic framework for Identity systems and analyses the architectures and workings of (a) IOTA Id, (b) Indy, and (c) eIDAS v1.0</li>
+                                    <li>Highlights differences in decentralization and privacy strategies across these systems.</li>
                                 </ul>
                         </div>
                         <div class="card-action">
@@ -123,9 +150,11 @@
                             Credentials</b></span>
                               <p>2024 IEEE International Conference on Blockchain (Blockchain)</p>
                                 <ul>
+                                    <li><b>Prevoke</b> presents key privacy challenges in the revocation protocol and proposes a
+                                        novel solution.</li>
                                   <li><b>Prevoke</b> keeps track of the revocation status of VCs using a Bloom Filter,
-                                    and a Merkle Tree Accumulator (MTAcc). These data structures are stored
-                                    in a DLT using a Smart Contract and updated during revocation of VCs</li>
+                                    and a Merkle Tree Accumulator. These data structures are stored
+                                    in a DLT using a Smart Contract and updated during revocation of VCs.</li>
                                     <li><b>Prevoke</b> proposes a novel two-phase verification technique which enables
                                       efficient and fast verification of almost all valid VCs. Only revoked VCs and
                                       handful of valid VCs go through expensive verification</li>
@@ -142,7 +171,9 @@
                           <span class="card-title"><b>Addressing traceability of revocation status of Verifiable Credentials</b></span>
                               <p>Work in Progress</p>
                                 <ul>
-                                  <li>Utilises Zero-Knowlege Proofs to address traceability problem</li>
+                                    <li>Formalizes the privacy of holder's traceability in the verifiable credentials system.</li>
+                                  <li>Proposes a revocation protocol that uses a custom-built Zero-Knowledge Proof circuit.</li>
+                                    <li>Our proposed protocol outperforms the existing protocols in terms of required bandwidth for issuers and holders.</li>
                                 </ul>
                         </div>
                         <div class="card-action">
@@ -193,12 +224,32 @@
                 </div>
               </div>
 
-              <div id="projects" class="full-height background-light">
+              <div id="projects" class="full-height background-dark">
                 <div class="  " >
                         <h4>Projects</h4>
-                        <div class="card">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title"><b>Untrace - Implementation</b></span>
+                            <p>University of Oslo, Norway. (August 2024 - present)</p>
+                            <ul>
+                                <li>This Implementation demonstrates the working of Untrace in a sand-boxed environment. </li>
+                                <li>Untrace is the implementation of the protocol that we developed to address the problem of holder's traceability in Verifiable Credentials system </li>
+                                <li>We built a custom ZKP-circuit based on groth16 ZKP scheme using the gnark library.</li>
+                                <li>This implementation consists of a) standard entities (Issuer, Holder, and Verifier), b) a Smart Contract, c) a mock VC data model based on W3C Specifications. </li>
+                                <li><b>Workflows</b>: 1) issuance, 2) revocation, 3) VP construction and sharing, and 4) VP verification</li>
+                                <li><b>Benchmarks</b>: benchmarked the performed of Untrace and IRMA's revocation technique</li>
+                                <li><b>Results</b>:  Untrace outperforms IRMA's protocol in terms of the required bandwidth for holders and issuers</li>
+                                <li><b>Languages</b>: Golang, Solidity, and Python</li>
+
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <a target="_blank" href="projects">The GitHub repository will be shared upon request, as the research paper is not yet published.</a>
+                        </div>
+                    </div>
+                    <div class="card">
                                 <div class="card-content">
-                                  <span class="card-title"><b>Prevoke- Implementation</b></span>
+                                  <span class="card-title"><b>Prevoke - Implementation</b></span>
                                   <p>University of Oslo, Norway. (August 2023 - August 2024)</p>
                                   <ul>
                                       <li>This Implementation demonstrates the working of Prevoke in a sand-boxed environment. </li>
@@ -217,7 +268,7 @@
                               </div>                   
                 </div>
               </div>
-              <div  id="work" class="full-height background-dark">
+              <div  id="work" class="full-height background-light">
                 <div class="  #fafafa  lighten-5 ">
                         <h4>Work Experience</h4>
                             <div class="card">
@@ -260,7 +311,7 @@
                                     
                     </div>
                   </div>
-              <div  id="others" class="full-height background-light">
+              <div  id="others" class="full-height background-dark">
                 <div class="  #fafafa  lighten-5 ">
                   <h4>Other Activities</h4>
 
@@ -320,7 +371,7 @@
 
       </div>
             </div>
-            <div style="text-align: center;" class="background-dark">
+            <div style="text-align: center;" class="background-light">
               <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img style="padding:1% 0% 0% 0%;" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a  rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
             </div>
         </div>
